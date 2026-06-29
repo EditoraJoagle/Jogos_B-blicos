@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tire seus filhos das telas e ensine a Palavra de Deus brincando! O maior combo de Jogos Bíblicos imprimíveis por apenas R$ 9,90.">
+  <title>Combo Jogos Bíblicos Kids - Ensinando a Bíblia Brincando</title>
+  
+  <!-- Google Fonts: Quicksand para um visual infantil, redondo e acolhedor + Poppins para legibilidade -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ==========================================
+       1. VARIABLES & COLORFUL DESIGN SYSTEM
+       ========================================== */
+    :root {
+      /* Base Theme: Joyful Indigo & Deep Royal Blue */
+      --bg-dark: #0f172a;
+      --bg-dark-med: #1e1b4b; /* Royal Indigo */
+      --bg-dark-light: #2e1065; /* Deep Purple Hint */
+      
+      /* Playful & Cheerful Colors (Sunday School Vibes) */
+      --color-yellow: #facc15;
+      --color-orange: #f97316;
+      --color-pink: #f43f5e;
+      --color-blue: #38bdf8;
+      --color-green: #4ade80;
+      --color-purple: #a855f7;
+      
+      /* Gradients */
+      --gold-gradient: linear-gradient(135deg, #ffe066 0%, #facc15 50%, #d97706 100%);
+      --gold-gradient-hover: linear-gradient(135deg, #fff080 0%, #fde047 50%, #ca8a04 100%);
+      --cta-gradient: linear-gradient(135deg, #ff007f 0%, #ff5f00 50%, #facc15 100%); /* Ultra colorful pulse */
+      --blue-gradient: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+      
+      /* Text Colors */
+      --text-light: #ffffff;
+      --text-muted: #cbd5e1;
+      --text-dark: #0f172a;
+      
+      /* Shadows & Borders */
+      --border-playful: 3px solid rgba(255, 255, 255, 0.1);
+      --shadow-playful: 0 15px 30px rgba(0, 0, 0, 0.35);
+      --transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy child-like feel */
+    }
+
+    /* ==========================================
+       2. RESET & GLOBAL STYLES
+       ========================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Quicksand', 'Poppins', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: radial-gradient(circle at 10% 20%, rgba(30, 58, 138, 0.6) 0%, rgba(15, 23, 42, 0.9) 90%);
+      color: var(--text-light);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Background dots pattern like school blackboard */
+    .bg-pattern {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-dark);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--bg-dark-med);
+      border-radius: 6px;
+      border: 3px solid var(--bg-dark);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-orange);
+    }
+
+    /* ==========================================
+       3. TYPOGRAPHY & HELPERS
+       ========================================== */
+    .text-center { text-align: center; }
+    
+    .text-yellow {
+      color: var(--color-yellow);
+      text-shadow: 0 2px 10px rgba(250, 204, 21, 0.3);
+    }
+    
+    .text-orange {
+      color: var(--color-orange);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.5rem 1.25rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    
+    .badge-yellow {
+      background: var(--color-yellow);
+      color: var(--text-dark);
+    }
+    
+    .badge-pink {
+      background: var(--color-pink);
+      color: var(--text-light);
+    }
+
+    .badge-alert {
+      background: #ef4444;
+      color: var(--text-light);
+    }
+
+    /* Colorful underline detail */
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 6px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, var(--color-blue), var(--color-green), var(--color-yellow), var(--color-pink));
+      margin: 0.75rem auto 0 auto;
+    }
+
+    .section-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 800px;
+      margin: 0 auto 3.5rem auto;
+      text-align: center;
+    }
+
+    /* ==========================================
+       4. ANIMATIONS
+       ========================================== */
+    @keyframes pulse-colorful {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.6), 0 0 0 0 rgba(250, 204, 21, 0.4);
+      }
+      70% {
+        transform: scale(1.04);
+        box-shadow: 0 0 0 15px rgba(244, 63, 94, 0), 0 0 0 10px rgba(250, 204, 21, 0);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(244, 63, 94, 0), 0 0 0 0 rgba(250, 204, 21, 0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(1deg); }
+      50% { transform: translateY(-12px) rotate(-2deg); }
+    }
+
+    @keyframes float-reverse {
+      0%, 100% { transform: translateY(0px) rotate(-2deg); }
+      50% { transform: translateY(12px) rotate(2deg); }
+    }
+
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(-3deg); }
+      50% { transform: rotate(3deg); }
+    }
+
+    /* ==========================================
+       5. COMPONENTS
+       ========================================== */
+    /* Big Colorful CTA Button (Tia da classe infantil style) */
+    .cta-button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      max-width: 480px;
+      padding: 1.4rem 2.5rem;
+      background: linear-gradient(135deg, #f97316 0%, #f43f5e 50%, #d946ef 100%);
+      color: var(--text-light);
+      font-size: 1.3rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border: 4px solid #ffffff;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(244, 63, 94, 0.4);
+      transition: var(--transition);
+      animation: pulse-colorful 2s infinite;
+      z-index: 1;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 15px 40px rgba(244, 63, 94, 0.6);
+      background: linear-gradient(135deg, #fb923c 0%, #f43f5e 40%, #e879f9 100%);
+    }
+
+    .cta-button:active {
+      transform: translateY(2px);
+    }
+
+    .cta-subtitle {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 0.75rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Sections general styling */
+    section {
+      padding: 6rem 0;
+      position: relative;
+    }
+
+    /* ==========================================
+       6. TOP URGENCY BAR
+       ========================================== */
+    .urgency-bar {
+      background: linear-gradient(90deg, var(--color-orange), var(--color-pink));
+      padding: 0.75rem 1rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #ffffff;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+      z-index: 100;
+      position: relative;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* ==========================================
+       7. HERO SECTION (1ª DOBRA)
+       ========================================== */
+    .hero {
+      background: radial-gradient(circle at top, #1e3a8a 0%, var(--bg-dark) 80%);
+      padding: 4rem 0 6rem 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Decorative clouds SVG in background */
+    .decor-cloud {
+      position: absolute;
+      fill: rgba(255, 255, 255, 0.03);
+      pointer-events: none;
+    }
+    
+    .cloud-1 { top: 10%; left: 5%; width: 150px; animation: float 10s ease-in-out infinite; }
+    .cloud-2 { top: 30%; right: 5%; width: 200px; animation: float-reverse 12s ease-in-out infinite; }
+
+    .hero-wrapper {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-content {
+      text-align: left;
+    }
+
+    .rating-stars {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--color-yellow);
+      background: rgba(255, 255, 255, 0.05);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 1.25rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .rating-stars span {
+      color: var(--text-light);
+      margin-left: 5px;
+    }
+
+    .hero h1 {
+      font-size: 3.25rem;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .hero p.lead {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+      font-weight: 500;
+    }
+
+    /* CSS Playful Mockup cards */
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      perspective: 1000px;
+    }
+
+    .mockup-container {
+      width: 100%;
+      max-width: 360px;
+      height: 440px;
+      position: relative;
+      transform-style: preserve-3d;
+    }
+
+    .mockup-card {
+      position: absolute;
+      border-radius: 24px;
+      padding: 1.5rem;
+      box-shadow: var(--shadow-playful);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+      border: 3px solid #ffffff;
+    }
+
+    .mockup-card.card-quiz {
+      width: 250px;
+      height: 310px;
+      background: linear-gradient(135deg, var(--color-blue) 0%, #0369a1 100%);
+      left: -10px;
+      top: 60px;
+      transform: rotateY(12deg) rotateX(8deg) rotateZ(-10deg);
+      z-index: 2;
+      animation: float 7s ease-in-out infinite;
+    }
+
+    .mockup-card.card-board {
+      width: 260px;
+      height: 320px;
+      background: linear-gradient(135deg, var(--color-pink) 0%, #be123c 100%);
+      right: -10px;
+      top: 30px;
+      transform: rotateY(-12deg) rotateX(8deg) rotateZ(10deg);
+      z-index: 1;
+      animation: float-reverse 8s ease-in-out infinite;
+    }
+
+    .mockup-card.card-main {
+      width: 280px;
+      height: 340px;
+      background: linear-gradient(135deg, var(--bg-dark-med) 0%, var(--bg-dark-light) 100%);
+      left: 40px;
+      top: 80px;
+      transform: translateZ(40px);
+      z-index: 3;
+      border: 4px solid var(--color-yellow);
+      box-shadow: 0 0 25px rgba(250, 204, 21, 0.4);
+    }
+
+    .mockup-card:hover {
+      transform: translateZ(60px) scale(1.08) rotate(0deg);
+      z-index: 10;
+    }
+
+    /* Inner card designs */
+    .card-header-game {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-icon {
+      width: 42px;
+      height: 42px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #ffffff;
+    }
+
+    .card-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: #ffffff;
+    }
+
+    .card-tag {
+      font-size: 0.75rem;
+      background: var(--color-yellow);
+      color: var(--text-dark);
+      padding: 0.25rem 0.75rem;
+      border-radius: 50px;
+      font-weight: 700;
+      text-transform: uppercase;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    }
+
+    .card-title {
+      font-size: 1.3rem;
+      color: var(--text-light);
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .card-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      flex-grow: 1;
+    }
+
+    .card-footer-game {
+      border-top: 2px dashed rgba(255, 255, 255, 0.2);
+      padding-top: 0.75rem;
+      margin-top: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--color-yellow);
+    }
+
+    .glow-circle {
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      background: radial-gradient(circle, rgba(250, 204, 21, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+      top: 50px;
+      left: 50px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* ==========================================
+       8. TRUST SYMBOLS / SOCIAL PROOF BANNER
+       ========================================== */
+    .trust-banner {
+      background: var(--bg-dark-med);
+      padding: 2.5rem 0;
+      border-top: 4px solid var(--color-purple);
+      border-bottom: 4px solid var(--color-blue);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .trust-item svg {
+      width: 44px;
+      height: 44px;
+      fill: var(--color-yellow);
+      margin-bottom: 0.75rem;
+      filter: drop-shadow(0 3px 6px rgba(0,0,0,0.3));
+    }
+
+    .trust-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-light);
+      margin-bottom: 0.25rem;
+    }
+
+    .trust-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================
+       9. BENEFITS SECTION (CARDS)
+       ========================================== */
+    .benefits {
+      background: var(--bg-dark);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .benefit-card {
+      background: var(--bg-dark-med);
+      border-radius: 28px;
+      padding: 2.5rem 2rem;
+      transition: var(--transition);
+      box-shadow: var(--shadow-playful);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Playful color accents for cards */
+    .benefit-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 8px;
+    }
+    
+    .benefit-card:nth-child(1) { border: 3px solid var(--color-blue); }
+    .benefit-card:nth-child(1)::before { background: var(--color-blue); }
+    .benefit-card:nth-child(2) { border: 3px solid var(--color-pink); }
+    .benefit-card:nth-child(2)::before { background: var(--color-pink); }
+    .benefit-card:nth-child(3) { border: 3px solid var(--color-yellow); }
+    .benefit-card:nth-child(3)::before { background: var(--color-yellow); }
+    .benefit-card:nth-child(4) { border: 3px solid var(--color-green); }
+    .benefit-card:nth-child(4)::before { background: var(--color-green); }
+
+    .benefit-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .benefit-icon-container {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      border: 2px solid #ffffff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .benefit-card:nth-child(1) .benefit-icon-container { background: var(--color-blue); }
+    .benefit-card:nth-child(2) .benefit-icon-container { background: var(--color-pink); }
+    .benefit-card:nth-child(3) .benefit-icon-container { background: var(--color-yellow); }
+    .benefit-card:nth-child(4) .benefit-icon-container { background: var(--color-green); }
+
+    .benefit-icon-container svg {
+      width: 32px;
+      height: 32px;
+      fill: #ffffff;
+    }
+
+    .benefit-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.85rem;
+      color: var(--text-light);
+    }
+
+    .benefit-text {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ==========================================
+       10. WHAT'S INCLUDED SECTION (COMBO DETAILS)
+       ========================================== */
+    .included {
+      background: radial-gradient(circle at bottom, #1e3a8a 0%, var(--bg-dark) 80%);
+      border-top: 4px solid var(--color-green);
+    }
+
+    .included-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 4.5rem;
+    }
+
+    .included-card {
+      background: var(--bg-dark-med);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: var(--shadow-playful);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      border: 3px solid #ffffff;
+    }
+
+    .included-card:hover {
+      transform: translateY(-5px) scale(1.02);
+    }
+
+    .included-img-placeholder {
+      height: 170px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border-bottom: 3px solid #ffffff;
+    }
+    
+    .included-card:nth-child(1) .included-img-placeholder { background: linear-gradient(135deg, var(--color-yellow), #ca8a04); }
+    .included-card:nth-child(2) .included-img-placeholder { background: linear-gradient(135deg, var(--color-blue), #0284c7); }
+    .included-card:nth-child(3) .included-img-placeholder { background: linear-gradient(135deg, var(--color-pink), #e11d48); }
+    .included-card:nth-child(4) .included-img-placeholder { background: linear-gradient(135deg, var(--color-orange), #ea580c); }
+    .included-card:nth-child(5) .included-img-placeholder { background: linear-gradient(135deg, var(--color-purple), #7e22ce); }
+    .included-card:nth-child(6) .included-img-placeholder { background: linear-gradient(135deg, var(--color-green), #16a34a); }
+
+    .included-img-icon {
+      width: 76px;
+      height: 76px;
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid #ffffff;
+      z-index: 1;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      animation: wiggle 3s ease-in-out infinite;
+    }
+    
+    .included-card:nth-child(2n) .included-img-icon {
+      animation: wiggle 3.5s ease-in-out infinite;
+    }
+
+    .included-img-icon svg {
+      width: 38px;
+      height: 38px;
+      fill: #ffffff;
+    }
+
+    .included-body {
+      padding: 1.75rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .included-tag {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+    
+    .included-card:nth-child(1) .included-tag { color: var(--color-yellow); }
+    .included-card:nth-child(2) .included-tag { color: var(--color-blue); }
+    .included-card:nth-child(3) .included-tag { color: var(--color-pink); }
+    .included-card:nth-child(4) .included-tag { color: var(--color-orange); }
+    .included-card:nth-child(5) .included-tag { color: var(--color-purple); }
+    .included-card:nth-child(6) .included-tag { color: var(--color-green); }
+
+    .included-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .included-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ==========================================
+       11. OFFER & PRICING SECTION (HIGH CONVERSION)
+       ========================================== */
+    .offer {
+      background: var(--bg-dark);
+      position: relative;
+    }
+
+    .offer::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 550px;
+      height: 550px;
+      background: radial-gradient(circle, rgba(250, 204, 21, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .offer-box {
+      max-width: 650px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, var(--bg-dark-med) 0%, var(--bg-dark-light) 100%);
+      border: 4px solid var(--color-yellow);
+      border-radius: 36px;
+      padding: 4rem 2.5rem;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 30px rgba(250, 204, 21, 0.2);
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Countdown Timer styling */
+    .countdown-container {
+      margin-bottom: 2.5rem;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 1.25rem;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .countdown-title {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .countdown-title svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--color-pink);
+    }
+
+    .timer {
+      display: inline-flex;
+      gap: 0.75rem;
+      font-size: 1.75rem;
+      font-weight: 700;
+    }
+
+    .timer-block {
+      background: var(--bg-dark);
+      border: 2px solid var(--color-pink);
+      color: var(--color-yellow);
+      padding: 0.5rem 1rem;
+      border-radius: 12px;
+      min-width: 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .timer-label {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-top: 0.1rem;
+      letter-spacing: 0.5px;
+    }
+
+    .price-box {
+      margin: 2.5rem 0;
+    }
+
+    .price-original {
+      font-size: 1.4rem;
+      color: var(--text-muted);
+      text-decoration: line-through;
+      margin-bottom: 0.25rem;
+    }
+
+    .price-promo {
+      font-size: 4.5rem;
+      font-weight: 900;
+      color: var(--color-yellow);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 4px 15px rgba(250,204,21,0.2);
+    }
+
+    .price-promo span {
+      font-size: 2rem;
+      font-weight: 700;
+      vertical-align: super;
+      margin-right: 4px;
+    }
+
+    .price-info {
+      font-size: 1.1rem;
+      color: var(--color-green);
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    .payment-icons {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      opacity: 0.9;
+    }
+
+    .payment-icons svg {
+      height: 28px;
+      fill: var(--text-light);
+    }
+
+    .checkout-guarantee-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-weight: 600;
+    }
+
+    .checkout-guarantee-text svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--color-green);
+    }
+
+    /* ==========================================
+       12. GUARANTEE SECTION (7 DAYS RISK FREE)
+       ========================================== */
+    .guarantee {
+      background: var(--bg-dark-med);
+      border-top: 4px solid var(--color-pink);
+      border-bottom: 4px solid var(--color-yellow);
+    }
+
+    .guarantee-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .guarantee-seal {
+      position: relative;
+      flex-shrink: 0;
+      width: 170px;
+      height: 170px;
+      background: linear-gradient(135deg, var(--color-yellow), var(--color-orange));
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(249, 115, 22, 0.4);
+      border: 5px solid #ffffff;
+    }
+
+    .guarantee-seal-number {
+      font-size: 4rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      line-height: 1;
+    }
+
+    .guarantee-seal-text {
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .guarantee-content h2 {
+      font-size: 2rem;
+      color: var(--color-yellow);
+      margin-bottom: 1rem;
+    }
+
+    .guarantee-content p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    /* ==========================================
+       13. FAQ SECTION (ACCORDION)
+       ========================================== */
+    .faq {
+      background: var(--bg-dark);
+    }
+
+    .faq-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--bg-dark-med);
+      border: 3px solid rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      margin-bottom: 1.25rem;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item.active {
+      border-color: var(--color-blue);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .faq-question {
+      padding: 1.5rem 1.75rem;
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      font-family: inherit;
+      color: var(--text-light);
+      font-size: 1.15rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .faq-question svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--text-muted);
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+
+    .faq-item.active .faq-question svg {
+      transform: rotate(180deg);
+      fill: var(--color-yellow);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .faq-answer-inner {
+      padding: 1.5rem 1.75rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      border-top: 2px dashed rgba(255, 255, 255, 0.05);
+    }
+
+    /* ==========================================
+       14. FOOTER
+       ========================================== */
+    footer {
+      background: #08071a;
+      padding: 4.5rem 0 2rem 0;
+      border-top: 4px solid var(--color-orange);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .footer-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-weight: 600;
+    }
+
+    .footer-links a:hover {
+      color: var(--color-yellow);
+    }
+
+    .footer-disclaimer {
+      max-width: 850px;
+      font-size: 0.75rem;
+      line-height: 1.6;
+      opacity: 0.4;
+      border-top: 2px dashed rgba(255, 255, 255, 0.05);
+      padding-top: 1.5rem;
+    }
+
+    /* ==========================================
+       15. MEDIA QUERIES (RESPONSIVE / MOBILE-FIRST)
+       ========================================== */
+    @media (max-width: 992px) {
+      .hero-wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 4rem;
+      }
+      
+      .hero-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h1 {
+        font-size: 2.75rem;
+      }
+
+      .hero p.lead {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .included-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+
+      .guarantee-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .included-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 4rem 0;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .hero h1 {
+        font-size: 2.1rem;
+      }
+
+      .lead {
+        font-size: 1.1rem;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .included-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .offer-box {
+        padding: 2.5rem 1.25rem;
+      }
+
+      .price-promo {
+        font-size: 3.5rem;
+      }
+
+      .cta-button {
+        font-size: 1.1rem;
+        padding: 1.2rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body class="bg-pattern">
+
+  <!-- ==========================================
+       A. URGENCY BAR
+       ========================================== -->
+  <div class="urgency-bar text-center">
+    🎉 ATENÇÃO TIAS E MAMÃES: Promoção Especial de Lançamento por tempo limitado! 💛
+  </div>
+
+  <!-- ==========================================
+       B. HERO SECTION
+       ========================================== -->
+  <section class="hero">
+    <!-- Playful Clouds Background SVG -->
+    <svg class="decor-cloud cloud-1" viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+    <svg class="decor-cloud cloud-2" viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+
+    <div class="container">
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <div class="rating-stars">
+            <!-- 5 Stars SVG -->
+            <svg width="18" height="18" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <span>Aprovado por +12.000 Famílias!</span>
+          </div>
+          
+          <br>
+          <span class="badge badge-pink">Material 100% Digital e Imprimível</span>
+          
+          <h1>Tire seus filhos das telas e ensine a Bíblia <br><span class="text-yellow">brincando com alegria!</span></h1>
+          <p class="lead">O combo mais alegre, colorido e divertido de atividades bíblicas feito especialmente para unir a família e animar as suas aulas do Ministério Infantil!</p>
+          
+          <button onclick="goToCheckout()" class="cta-button">
+            QUERO GARANTIR MEUS JOGOS AGORA!
+          </button>
+          
+          <span class="cta-subtitle">
+            <svg viewBox="0 0 20 20" width="16" height="16" fill="#4ade80"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            Acesso instantâneo e vitalício por apenas R$ 9,90!
+          </span>
+        </div>
+        
+        <!-- Interactive CSS Mockup representing children's class visual elements -->
+        <div class="hero-visual">
+          <div class="glow-circle"></div>
+          <div class="mockup-container">
+            <!-- Quiz Card -->
+            <div class="mockup-card card-quiz">
+              <div class="card-header-game">
+                <span class="card-tag">Quiz</span>
+                <div class="card-icon">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16h-2v-2h2v2zm1.07-7.75l-.9.92C12.45 11.9 12 12.5 12 14h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                </div>
+              </div>
+              <h3 class="card-title">Perguntas Divertidas</h3>
+              <p class="card-desc">Desafios que aguçam a curiosidade das crianças e ensinam de forma super dinâmica e rápida.</p>
+              <div class="card-footer-game">
+                <span style="color:#ffffff;">Super Divertido</span>
+                <span style="color:#ffffff;">Pronto para usar</span>
+              </div>
+            </div>
+            
+            <!-- Board Game Card -->
+            <div class="mockup-card card-board">
+              <div class="card-header-game">
+                <span class="card-tag" style="background:var(--color-yellow); color:var(--text-dark);">Trilha</span>
+                <div class="card-icon">
+                  <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 16H5v-7h7v7zm0-8H5V5h7v6zm7 8h-6v-7h6v7zm0-8h-6V5h6v6z"/></svg>
+                </div>
+              </div>
+              <h3 class="card-title">Caminho da Fé</h3>
+              <p class="card-desc">Um tabuleiro muito alegre com desenhos e tarefas para as crianças avançarem de casa em casa.</p>
+              <div class="card-footer-game">
+                <span style="color:#ffffff;">Cores Vibrantes</span>
+                <span style="color:#ffffff;">Jogo Completo</span>
+              </div>
+            </div>
+            
+            <!-- Main Card -->
+            <div class="mockup-card card-main">
+              <div class="card-header-game">
+                <span class="card-tag" style="background:var(--color-green); color:var(--text-dark);">Lançamento</span>
+                <div class="card-icon">
+                  <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </div>
+              </div>
+              <h3 class="card-title" style="color:var(--color-yellow); font-size: 1.5rem;">Super Kit Bíblia</h3>
+              <p class="card-desc" style="color:#ffffff;">Diversão garantida para a EBD, cultinhos ou reuniões familiares. Tenha em mãos jogos que divertem e guardam a Palavra no coração dos pequenos.</p>
+              <div class="card-footer-game" style="color:var(--color-green);">
+                <span>Apenas R$ 9,90</span>
+                <span>Baixe Agora</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       C. TRUST / FEATURES STATS BANNER
+       ========================================== -->
+  <section class="trust-banner">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <!-- Shield Check SVG -->
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          <div class="trust-title">Compra Confiável</div>
+          <div class="trust-text">Plataforma 100% Protegida</div>
+        </div>
+        <div class="trust-item">
+          <!-- Download SVG -->
+          <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+          <div class="trust-title">Download Imediato</div>
+          <div class="trust-text">No seu e-mail na mesma hora</div>
+        </div>
+        <div class="trust-item">
+          <!-- File PDF SVG -->
+          <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V8H10c.83 0 1.5.67 1.5 1.5v0zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V8h2.5c.83 0 1.5.67 1.5 1.5v2zm4-2.5H19v1h1.5V11H19v2h-1.5V8h3v1.5zm-8.5.5c0-.28-.22-.5-.5-.5H9v1h.5c.28 0 .5-.22.5-.5v0zm3.5 2c0-.28-.22-.5-.5-.5h-1v2h1c.28 0 .5-.22.5-.5v-1zM6 6H4v14c0 1.1.9 2 2 2h14v-2H6V6z"/></svg>
+          <div class="trust-title">Fácil de Imprimir</div>
+          <div class="trust-text">Arquivos prontos em A4</div>
+        </div>
+        <div class="trust-item">
+          <!-- Award SVG -->
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+          <div class="trust-title">Testado e Aprovado</div>
+          <div class="trust-text">7 dias de garantia total</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       D. BENEFITS SECTION (CARDS)
+       ========================================== -->
+  <section class="benefits" id="beneficios">
+    <div class="container">
+      <h2 class="section-title">Por que você vai amar este kit?</h2>
+      <p class="section-subtitle">A nossa missão é ajudar você, tia ou mamãe, a passar a maior e mais linda mensagem do mundo de um jeito alegre que as crianças nunca vão esquecer!</p>
+      
+      <div class="benefits-grid">
+        <!-- Benefit Card 1 (Blue) -->
+        <div class="benefit-card">
+          <div class="benefit-icon-container">
+            <!-- Screen/TV Off SVG -->
+            <svg viewBox="0 0 24 24"><path d="M21.22 21.22L2.78 2.78 1.39 4.17 3 5.78V18c0 1.1.9 2 2 2h12.22l2.61 2.61 1.39-1.39zM5 18V7.78L15.22 18H5zm16-4V6c0-1.1-.9-2-2-2H7.82l2 2H19v8l1.1 1.1.9-1.1z"/></svg>
+          </div>
+          <h3 class="benefit-title">Menos Telas, Mais Vida!</h3>
+          <p class="benefit-text">Tire a atenção dos pequenos dos vídeos do celular. Troque o tempo ocioso por jogos cooperativos que trazem conversas reais e edificantes.</p>
+        </div>
+
+        <!-- Benefit Card 2 (Pink) -->
+        <div class="benefit-card">
+          <div class="benefit-icon-container">
+            <!-- Family/Heart SVG -->
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <h3 class="benefit-title">Momento de Comunhão</h3>
+          <p class="benefit-text">Ideal para os cultos no lar. As dinâmicas unem a família na mesa de jantar para rir, se divertir e aprender sobre os ensinamentos de Jesus.</p>
+        </div>
+
+        <!-- Benefit Card 3 (Yellow) -->
+        <div class="benefit-card">
+          <div class="benefit-icon-container">
+            <!-- Groups/Church SVG -->
+            <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          </div>
+          <h3 class="benefit-title">Apoio para EBD e Células</h3>
+          <p class="benefit-text">Acabe com a falta de ideias para as suas aulas infantis. Tenha dinâmicas lúdicas prontas para segurar a atenção de todas as crianças!</p>
+        </div>
+
+        <!-- Benefit Card 4 (Green) -->
+        <div class="benefit-card">
+          <div class="benefit-icon-container">
+            <!-- Bolt/Fast SVG -->
+            <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          </div>
+          <h3 class="benefit-title">Super Prático de Usar</h3>
+          <p class="benefit-text">Arquivo digital em PDF de altíssima qualidade. Baixe em um clique, imprima em qualquer impressora doméstica comum e comece a diversão!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       E. WHAT'S INCLUDED SECTION (COMBO DETAILS)
+       ========================================== -->
+  <section class="included" id="conteudo">
+    <div class="container">
+      <h2 class="section-title">O que vem no seu Super Combo?</h2>
+      <p class="section-subtitle">Uma caixa de tesouros digital cheia de joguinhos divertidos para imprimir quantas vezes quiser!</p>
+
+      <div class="included-grid">
+        <!-- Card 1 -->
+        <div class="included-card">
+          <div class="included-img-placeholder">
+            <div class="included-img-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 12c0-1.1-.9-2-2-2V6c0-1.1-.9-2-2-2h-4c0-1.1-.9-2-2-2s-2 .9-2 2H4c-1.1 0-2 .9-2 2v4c1.1 0 2 .9 2 2s-.9 2-2 2v4c0 1.1.9 2 2 2h4c0-1.1.9-2 2-2s2 .9 2 2h4c1.1 0 2-.9 2-2v-4c1.1 0 2-.9 2-2z"/></svg>
+            </div>
+          </div>
+          <div class="included-body">
+            <span class="included-tag">Dinâmica</span>
+            <h3>1. Super Quiz Bíblico</h3>
+            <p>Mais de 100 perguntas com gabarito. Dividido em níveis fácil, médio e difícil. Perfeito para gincanas barulhentas e animadas!</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="included-card">
+          <div class="included-img-placeholder">
+            <div class="included-img-icon">
+              <svg viewBox="0 0 24 24"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/></svg>
+            </div>
+          </div>
+          <div class="included-body">
+            <span class="included-tag">Tabuleiro</span>
+            <h3>2. Jogo Caminho da Fé</h3>
+            <p>Um lindo tabuleiro colorido imprimível com casas de perguntas e tarefas especiais para prender a atenção até o final.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="included-card">
+          <div class="included-img-placeholder">
+            <div class="included-img-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </div>
+          </div>
+          <div class="included-body">
+            <span class="included-tag">Memória</span>
+            <h3>3. Heróis da Bíblia</h3>
+            <p>40 cartas com lindos desenhos dos heróis da fé (Ester, Davi, Noé...). Ensina as virtudes de cada personagem enquanto joga!</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="included-card">
+          <div class="included-img-placeholder">
+            <div class="included-img-icon">
+              <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            </div>
+          </div>
+          <div class="included-body">
+            <span class="included-tag">Aventura</span>
+            <h3>4. Caça ao Tesouro Bíblico</h3>
+            <p>Roteiro completo de charadas e pistas bíblicas para você espalhar pela sala ou quintal. Uma aventura inesquecível!</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="included-card">
+          <div class="included-img-placeholder">
+            <div class="included-img-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l2.79-2.79C9.93 18.66 10.94 19 12 19c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/></svg>
+            </div>
+          </div>
+          <div class="included-body">
+            <span class="included-tag">Mímica</span>
+            <h3>5. Imagem, Ação & Mímica</h3>
+            <p>Cartas com temas, milagres e personagens para fazer mímica ou desenho. Diversão e muitas gargalhadas em grupo!</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="included-card">
+          <div class="included-img-placeholder">
+            <div class="included-img-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h16v6z"/></svg>
+            </div>
+          </div>
+          <div class="included-body">
+            <span class="included-tag">Super Bônus</span>
+            <h3>6. Desenhos & Versículos</h3>
+            <p>Dezenas de desenhos bíblicos caprichados para colorir e cartões fáceis para a memorização de versículos importantes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button onclick="goToCheckout()" class="cta-button">
+          QUERO ESTE COMBO COMPLETO AGORA
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       F. OFFER & PRICING SECTION
+       ========================================== -->
+  <section class="offer" id="oferta">
+    <div class="container">
+      <div class="offer-box">
+        <span class="badge badge-alert">PROMOÇÃO ESPECIAL DE LANÇAMENTO</span>
+        <h2 style="font-size:2rem; margin-bottom:1.5rem; text-transform:uppercase; color: #ffffff;">Leve todo o combo por um valor simbólico!</h2>
+        
+        <!-- Countdown Timer -->
+        <div class="countdown-container">
+          <div class="countdown-title">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            O preço vai subir! Garanta sua vaga com desconto:
+          </div>
+          <div class="timer">
+            <div class="timer-block">
+              <span id="min">15</span>
+              <div class="timer-label">Min</div>
+            </div>
+            <span style="align-self:center; color: var(--color-pink)">:</span>
+            <div class="timer-block">
+              <span id="sec">00</span>
+              <div class="timer-label">Seg</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prices -->
+        <div class="price-box">
+          <div class="price-original">De R$ 47,90</div>
+          <div class="price-promo"><span>R$</span> 9,90</div>
+          <div class="price-info">À VISTA NO PIX OU CARTÃO DE CRÉDITO</div>
+          <p style="font-size: 1rem; color: var(--text-muted); max-width: 450px; margin: 0 auto; line-height: 1.5;">Pague apenas uma vez e tenha acesso para sempre. Baixe e imprima quando quiser!</p>
+        </div>
+
+        <button onclick="goToCheckout()" class="cta-button">
+          COMPRAR COMBO JOGOS BÍBLICOS
+        </button>
+
+        <span class="checkout-guarantee-text">
+          <svg viewBox="0 0 20 20"><path d="M9 12l2 2 4-4M7.833 4.167a5 5 0 018.334 0v2.5a5 5 0 01-8.334 0v-2.5zm0 10a5 5 0 018.334 0v2.5a5 5 0 01-8.334 0v-2.5z"/></svg>
+          Garantia de 7 dias ou seu dinheiro de volta!
+        </span>
+
+        <!-- Payment icons -->
+        <div class="payment-icons">
+          <!-- Pix Icon SVG -->
+          <svg width="40" height="24" viewBox="0 0 512 512"><path d="M356.5 244.6c0 10.4-8.4 18.8-18.8 18.8H174.3c-10.4 0-18.8-8.4-18.8-18.8s8.4-18.8 18.8-18.8h163.4c10.4 0 18.8 8.4 18.8 18.8z M174.3 175.7h163.4c10.4 0 18.8-8.4 18.8-18.8s-8.4-18.8-18.8-18.8H174.3c-10.4 0-18.8 8.4-18.8 18.8s8.4 18.8 18.8 18.8z M337.7 317.9H174.3c-10.4 0-18.8 8.4-18.8 18.8s8.4 18.8 18.8 18.8h163.4c10.4 0 18.8-8.4 18.8-18.8s-8.4-18.8-18.8-18.8z M462.8 108.6L279.7 7c-14.7-8.1-32.7-8.1-47.4 0L49.2 108.6C19.3 125.1 0 157.1 0 191.9v202.9c0 34.8 19.3 66.8 49.2 83.3l183.1 101.6c14.7 8.1 32.7 8.1 47.4 0l183.1-101.6c29.9-16.5 49.2-48.5 49.2-83.3V191.9c0-34.8-19.3-66.8-49.2-83.3zM464 394.8c0 18.3-10.1 35.1-25.9 43.8L255 540.2V113L64 218.6v176.2l175.1 97c7.7 4.3 17.1 4.3 24.8 0l175.1-97c15.8-8.7 25.9-25.5 25.9-43.8v-156.4z"/></svg>
+          <!-- MasterCard SVG -->
+          <svg width="40" height="24" viewBox="0 0 24 15"><circle cx="7" cy="7.5" r="7" fill="#eb001b"/><circle cx="17" cy="7.5" r="7" fill="#ff5f00" fill-opacity="0.8"/></svg>
+          <!-- Visa SVG -->
+          <svg width="40" height="24" viewBox="0 0 24 15"><path d="M0 0h24v15H0z" fill="none"/><path d="M9.8 10.3l1-5.7H9.2L8.2 8.6c-.1.6-.3.9-.3.9s-.4-1-.7-1.8L5.7 4.6H2.3l4 8H9.3l.5-2.3z" fill="#1a1f71"/><path d="M15.4 10.1c.1-.8.9-1.3 1.8-1.3.8 0 1.4.3 1.7.5l.3-1.8c-.5-.2-1.2-.4-2-.4-2.1 0-3.6 1.1-3.6 2.7 0 2.2 3.1 2.1 3.1 3.2 0 .4-.4.8-1.1.8-.9 0-1.6-.4-2.1-.6l-.3 1.9c.6.3 1.5.5 2.4.5 2.2 0 3.8-1.1 3.8-2.8.1-2.1-3-2-3-2.7z" fill="#1a1f71"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       G. GUARANTEE SECTION
+       ========================================== -->
+  <section class="guarantee">
+    <div class="container">
+      <div class="guarantee-wrapper">
+        <div class="guarantee-seal">
+          <span class="guarantee-seal-number">7</span>
+          <span class="guarantee-seal-text">Dias de<br>Garantia</span>
+        </div>
+        <div class="guarantee-content">
+          <h2>Fique Tranquila: O Risco é Todo Nosso!</h2>
+          <p>Temos tanta certeza que as crianças vão amar os jogos que oferecemos uma <strong>Garantia Incondicional de 7 dias</strong>. Se você baixar o material e achar que ele não serviu para a sua família ou para a sua turminha da EBD, é só mandar uma mensagem rápida. Devolvemos 100% do seu dinheiro, com muito amor e carinho, sem qualquer burocracia ou perguntas chatas!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       H. FAQ SECTION
+       ========================================== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title">Perguntas Frequentes</h2>
+      <p class="section-subtitle">Tem alguma dúvida? A tia responde! Veja abaixo as principais perguntas sobre o combo.</p>
+
+      <div class="faq-wrapper">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Como eu recebo os jogos?</span>
+            <svg viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              O envio é feito de forma 100% automatizada. Assim que a sua compra for confirmada (pagamentos por Pix são liberados na hora!), você receberá no seu e-mail um link de acesso especial para fazer o download de todos os joguinhos e atividades em alta resolução.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Vai chegar alguma coisa na minha casa?</span>
+            <svg viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Não. O produto é <strong>100% digital</strong> em formato PDF. Isso é ótimo porque você não paga frete, não precisa esperar dias pelos correios e pode imprimir na impressora de casa ou em uma papelaria pertinho de você no papel que achar melhor!
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Serve para crianças de quais idades?</span>
+            <svg viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              O kit é excelente para crianças de 4 a 14 anos! Como ele possui diferentes níveis de perguntas no Quiz, cartões de mímicas muito divertidos e um jogo de tabuleiro com regras simples, as crianças menores jogam juntas com os adolescentes e os adultos se divertem muito também!
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Posso imprimir os jogos mais de uma vez?</span>
+            <svg viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Sim! O acesso é vitalício. Você pode salvar os arquivos em PDF no seu computador, pen drive ou celular e imprimi-los sempre que quiser. Pode imprimir novos tabuleiros se rasgarem ou novos cartões de perguntas se perderem.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Como funciona a garantia de 7 dias?</span>
+            <svg viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              É super simples! Se nos primeiros 7 dias após a compra você decidir que o material não atendeu suas expectativas ou que as crianças não gostaram, basta nos enviar um e-mail. Nós devolveremos todo o dinheiro investido imediatamente, sem ressentimentos.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       I. FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-wrapper">
+        <h3 class="text-yellow" style="font-size:1.4rem;">JOGOS BÍBLICOS KIDS 💛</h3>
+        <p style="max-width: 500px; line-height: 1.5;">O maior e mais carinhoso acervo de diversão cristã para os pequenos. Ensinando a Bíblia com alegria!</p>
+        
+        <div class="footer-links">
+          <a href="#beneficios">Vantagens</a>
+          <a href="#conteudo">Conteúdo do Kit</a>
+          <a href="#oferta">Adquirir Desconto</a>
+          <a href="#faq">Dúvidas</a>
+        </div>
+        
+        <p>Copyright &copy; 2026 - Jogos Bíblicos Kids. Todos os direitos reservados.</p>
+        
+        <div class="footer-disclaimer">
+          AVISO LEGAL: Este site não é afiliado ao Facebook, Google ou a qualquer rede social. Todas as marcas e marcas registradas são de propriedade de seus respectivos donos. O suporte e atendimento são oferecidos exclusivamente pelo e-mail oficial disponibilizado na área de membros.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       J. JAVASCRIPT FOR PAGE DYNAMICS
+       ========================================== -->
+  <script>
+    /* 1. OBFUSCATED CHECKOUT REDIRECTION */
+    function goToCheckout() {
+      try {
+        // Base64 encoded string: aHR0cHM6Ly9wYXkua2l3aWZ5LmNvbS5ici8ycFY5dk1k
+        // Decodes to: https://pay.kiwify.com.br/2pV9vMd
+        const base64Url = "aHR0cHM6Ly9wYXkua2l3aWZ5LmNvbS5ici8ycFY5dk1k";
+        const decodedUrl = atob(base64Url);
+        window.location.href = decodedUrl;
+      } catch (error) {
+        console.error("Redirection error:", error);
+      }
+    }
+
+    /* 2. DYNAMIC COUNTDOWN TIMER (15 Minutes) */
+    function startTimer(durationInSeconds) {
+      let timer = durationInSeconds;
+      const minEl = document.getElementById("min");
+      const secEl = document.getElementById("sec");
+      
+      setInterval(() => {
+        let minutes = parseInt(timer / 60, 10);
+        let seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        if (minEl && secEl) {
+          minEl.textContent = minutes;
+          secEl.textContent = seconds;
+        }
+
+        if (--timer < 0) {
+          timer = durationInSeconds; // Reset to 15 mins for session urgency consistency
+        }
+      }, 1000);
+    }
+
+    /* 3. FAQ ACCORDION TRANSITIONS */
+    document.addEventListener("DOMContentLoaded", () => {
+      // Start the 15-minute countdown
+      startTimer(15 * 60);
+
+      // Accordion click handling
+      const faqQuestions = document.querySelectorAll(".faq-question");
+
+      faqQuestions.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const faqItem = btn.parentElement;
+          const answer = faqItem.querySelector(".faq-answer");
+          const isActive = faqItem.classList.contains("active");
+
+          // Close all FAQ items
+          document.querySelectorAll(".faq-item").forEach(item => {
+            item.classList.remove("active");
+            item.querySelector(".faq-answer").style.maxHeight = null;
+          });
+
+          // Open clicked one if it wasn't active
+          if (!isActive) {
+            faqItem.classList.add("active");
+            answer.style.maxHeight = answer.scrollHeight + "px";
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
